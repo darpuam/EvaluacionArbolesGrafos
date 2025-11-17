@@ -26,7 +26,7 @@ namespace EvaluacionArbolesGrafos
         }
 
         // ---------------- SECCIÓN ÁRBOL ----------------
-        private void btnAgregarEmpleado_Click(object sender, EventArgs e)
+        private void btnAgregarEmpleado_Click_1(object sender, EventArgs e)
         {
             string jefe = tbJefeSuperior.Text.Trim();
             string nombre = tbNuevoEmpleado.Text.Trim();
@@ -79,7 +79,7 @@ namespace EvaluacionArbolesGrafos
         }
 
         // ---------------- SECCIÓN GRAFO ----------------
-        private void btnAgregarEdificio_Click(object sender, EventArgs e)
+        private void btnAgregarEdificio_Click_1(object sender, EventArgs e)
         {
             string edificio = tbEdificio1.Text.Trim();
             if (!string.IsNullOrEmpty(edificio))
@@ -89,7 +89,7 @@ namespace EvaluacionArbolesGrafos
             }
         }
 
-        private void btnCrearRuta_Click(object sender, EventArgs e)
+        private void btnCrearRuta_Click_1(object sender, EventArgs e)
         {
             string origen = tbEdificio1.Text.Trim();
             string destino = tbEdificio2.Text.Trim();
@@ -105,7 +105,7 @@ namespace EvaluacionArbolesGrafos
             }
         }
 
-        private void btnCalcularRuta_Click(object sender, EventArgs e)
+        private void btnCalcularRuta_Click_1(object sender, EventArgs e)
         {
             string inicio = tbEdificio1.Text.Trim();
             string fin = tbEdificio2.Text.Trim();

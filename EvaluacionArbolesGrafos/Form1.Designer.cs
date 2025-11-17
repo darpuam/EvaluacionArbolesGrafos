@@ -88,7 +88,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 156);
+            this.label1.Location = new System.Drawing.Point(46, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 16);
             this.label1.TabIndex = 8;
@@ -109,6 +109,7 @@
             this.btnAgregarEmpleado.TabIndex = 6;
             this.btnAgregarEmpleado.Text = "Agregar a la jerarquia";
             this.btnAgregarEmpleado.UseVisualStyleBackColor = true;
+            this.btnAgregarEmpleado.Click += new System.EventHandler(this.btnAgregarEmpleado_Click_1);
             // 
             // tbCargo
             // 
@@ -182,7 +183,7 @@
             // lblResultadoRuta
             // 
             this.lblResultadoRuta.AutoSize = true;
-            this.lblResultadoRuta.Location = new System.Drawing.Point(101, 189);
+            this.lblResultadoRuta.Location = new System.Drawing.Point(62, 123);
             this.lblResultadoRuta.Name = "lblResultadoRuta";
             this.lblResultadoRuta.Size = new System.Drawing.Size(7, 112);
             this.lblResultadoRuta.TabIndex = 10;
@@ -196,6 +197,7 @@
             this.btnCalcularRuta.TabIndex = 9;
             this.btnCalcularRuta.Text = "Calcular Ruta";
             this.btnCalcularRuta.UseVisualStyleBackColor = true;
+            this.btnCalcularRuta.Click += new System.EventHandler(this.btnCalcularRuta_Click_1);
             // 
             // lstRutas
             // 
@@ -214,6 +216,7 @@
             this.btnAgregarEdificio.TabIndex = 7;
             this.btnAgregarEdificio.Text = "Registrar Edificio";
             this.btnAgregarEdificio.UseVisualStyleBackColor = true;
+            this.btnAgregarEdificio.Click += new System.EventHandler(this.btnAgregarEdificio_Click_1);
             // 
             // btnCrearRuta
             // 
@@ -223,6 +226,7 @@
             this.btnCrearRuta.TabIndex = 6;
             this.btnCrearRuta.Text = "Crear Conexion";
             this.btnCrearRuta.UseVisualStyleBackColor = true;
+            this.btnCrearRuta.Click += new System.EventHandler(this.btnCrearRuta_Click_1);
             // 
             // lblEdificio2
             // 
