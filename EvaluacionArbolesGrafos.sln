@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluacionArbolesGrafos", "EvaluacionArbolesGrafos\EvaluacionArbolesGrafos.csproj", "{B2415378-8D1E-4811-8A35-9EA98E77A526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2415378-8D1E-4811-8A35-9EA98E77A526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2415378-8D1E-4811-8A35-9EA98E77A526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2415378-8D1E-4811-8A35-9EA98E77A526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2415378-8D1E-4811-8A35-9EA98E77A526}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A624477-40F9-4054-88A3-18FB31F368F3}
+	EndGlobalSection
+EndGlobal
