@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Arbol = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.btnAgregarEmpleado = new System.Windows.Forms.Button();
             this.tbCargo = new System.Windows.Forms.TextBox();
@@ -39,18 +40,17 @@
             this.tbJefeSuperior = new System.Windows.Forms.TextBox();
             this.lblJefeSuperior = new System.Windows.Forms.Label();
             this.Grafo = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbEdificio1 = new System.Windows.Forms.TextBox();
-            this.tbEdifiicio2 = new System.Windows.Forms.TextBox();
-            this.tbDistancia = new System.Windows.Forms.TextBox();
-            this.lblDistancia = new System.Windows.Forms.Label();
-            this.lblEdificio1 = new System.Windows.Forms.Label();
-            this.lblEdificio2 = new System.Windows.Forms.Label();
-            this.btnCrearRuta = new System.Windows.Forms.Button();
-            this.btnAgregarEdificio = new System.Windows.Forms.Button();
-            this.lstRutas = new System.Windows.Forms.ListBox();
-            this.btnCalcularRuta = new System.Windows.Forms.Button();
             this.lblResultadoRuta = new System.Windows.Forms.Label();
+            this.btnCalcularRuta = new System.Windows.Forms.Button();
+            this.lstRutas = new System.Windows.Forms.ListBox();
+            this.btnAgregarEdificio = new System.Windows.Forms.Button();
+            this.btnCrearRuta = new System.Windows.Forms.Button();
+            this.lblEdificio2 = new System.Windows.Forms.Label();
+            this.lblEdificio1 = new System.Windows.Forms.Label();
+            this.lblDistancia = new System.Windows.Forms.Label();
+            this.tbDistancia = new System.Windows.Forms.TextBox();
+            this.tbEdificio2 = new System.Windows.Forms.TextBox();
+            this.tbEdificio1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.Arbol.SuspendLayout();
             this.Grafo.SuspendLayout();
@@ -85,9 +85,18 @@
             this.Arbol.Text = "Arbol";
             this.Arbol.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(56, 156);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 16);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "lblTotalEmpleados";
+            // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(37, 138);
+            this.treeView1.Location = new System.Drawing.Point(37, 148);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(330, 254);
             this.treeView1.TabIndex = 7;
@@ -160,7 +169,7 @@
             this.Grafo.Controls.Add(this.lblEdificio1);
             this.Grafo.Controls.Add(this.lblDistancia);
             this.Grafo.Controls.Add(this.tbDistancia);
-            this.Grafo.Controls.Add(this.tbEdifiicio2);
+            this.Grafo.Controls.Add(this.tbEdificio2);
             this.Grafo.Controls.Add(this.tbEdificio1);
             this.Grafo.Location = new System.Drawing.Point(4, 25);
             this.Grafo.Name = "Grafo";
@@ -170,89 +179,14 @@
             this.Grafo.Text = "Grafo";
             this.Grafo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblResultadoRuta
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 156);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 16);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "lblTotalEmpleados";
-            // 
-            // tbEdificio1
-            // 
-            this.tbEdificio1.Location = new System.Drawing.Point(119, 25);
-            this.tbEdificio1.Name = "tbEdificio1";
-            this.tbEdificio1.Size = new System.Drawing.Size(100, 22);
-            this.tbEdificio1.TabIndex = 0;
-            // 
-            // tbEdifiicio2
-            // 
-            this.tbEdifiicio2.Location = new System.Drawing.Point(119, 62);
-            this.tbEdifiicio2.Name = "tbEdifiicio2";
-            this.tbEdifiicio2.Size = new System.Drawing.Size(100, 22);
-            this.tbEdifiicio2.TabIndex = 1;
-            // 
-            // tbDistancia
-            // 
-            this.tbDistancia.Location = new System.Drawing.Point(119, 101);
-            this.tbDistancia.Name = "tbDistancia";
-            this.tbDistancia.Size = new System.Drawing.Size(100, 22);
-            this.tbDistancia.TabIndex = 2;
-            // 
-            // lblDistancia
-            // 
-            this.lblDistancia.AutoSize = true;
-            this.lblDistancia.Location = new System.Drawing.Point(41, 107);
-            this.lblDistancia.Name = "lblDistancia";
-            this.lblDistancia.Size = new System.Drawing.Size(66, 16);
-            this.lblDistancia.TabIndex = 3;
-            this.lblDistancia.Text = "Distancia:";
-            // 
-            // lblEdificio1
-            // 
-            this.lblEdificio1.AutoSize = true;
-            this.lblEdificio1.Location = new System.Drawing.Point(44, 30);
-            this.lblEdificio1.Name = "lblEdificio1";
-            this.lblEdificio1.Size = new System.Drawing.Size(64, 16);
-            this.lblEdificio1.TabIndex = 4;
-            this.lblEdificio1.Text = "Edificio 1:";
-            // 
-            // lblEdificio2
-            // 
-            this.lblEdificio2.AutoSize = true;
-            this.lblEdificio2.Location = new System.Drawing.Point(44, 68);
-            this.lblEdificio2.Name = "lblEdificio2";
-            this.lblEdificio2.Size = new System.Drawing.Size(64, 16);
-            this.lblEdificio2.TabIndex = 5;
-            this.lblEdificio2.Text = "Edificio 2:";
-            // 
-            // btnCrearRuta
-            // 
-            this.btnCrearRuta.Location = new System.Drawing.Point(261, 60);
-            this.btnCrearRuta.Name = "btnCrearRuta";
-            this.btnCrearRuta.Size = new System.Drawing.Size(115, 32);
-            this.btnCrearRuta.TabIndex = 6;
-            this.btnCrearRuta.Text = "Crear Conexion";
-            this.btnCrearRuta.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarEdificio
-            // 
-            this.btnAgregarEdificio.Location = new System.Drawing.Point(249, 22);
-            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
-            this.btnAgregarEdificio.Size = new System.Drawing.Size(136, 32);
-            this.btnAgregarEdificio.TabIndex = 7;
-            this.btnAgregarEdificio.Text = "Registrar Edificio";
-            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
-            // 
-            // lstRutas
-            // 
-            this.lstRutas.FormattingEnabled = true;
-            this.lstRutas.ItemHeight = 16;
-            this.lstRutas.Location = new System.Drawing.Point(75, 166);
-            this.lstRutas.Name = "lstRutas";
-            this.lstRutas.Size = new System.Drawing.Size(254, 180);
-            this.lstRutas.TabIndex = 8;
+            this.lblResultadoRuta.AutoSize = true;
+            this.lblResultadoRuta.Location = new System.Drawing.Point(101, 189);
+            this.lblResultadoRuta.Name = "lblResultadoRuta";
+            this.lblResultadoRuta.Size = new System.Drawing.Size(7, 112);
+            this.lblResultadoRuta.TabIndex = 10;
+            this.lblResultadoRuta.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
             // 
             // btnCalcularRuta
             // 
@@ -263,14 +197,80 @@
             this.btnCalcularRuta.Text = "Calcular Ruta";
             this.btnCalcularRuta.UseVisualStyleBackColor = true;
             // 
-            // lblResultadoRuta
+            // lstRutas
             // 
-            this.lblResultadoRuta.AutoSize = true;
-            this.lblResultadoRuta.Location = new System.Drawing.Point(101, 189);
-            this.lblResultadoRuta.Name = "lblResultadoRuta";
-            this.lblResultadoRuta.Size = new System.Drawing.Size(7, 112);
-            this.lblResultadoRuta.TabIndex = 10;
-            this.lblResultadoRuta.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+            this.lstRutas.FormattingEnabled = true;
+            this.lstRutas.ItemHeight = 16;
+            this.lstRutas.Location = new System.Drawing.Point(75, 166);
+            this.lstRutas.Name = "lstRutas";
+            this.lstRutas.Size = new System.Drawing.Size(254, 180);
+            this.lstRutas.TabIndex = 8;
+            // 
+            // btnAgregarEdificio
+            // 
+            this.btnAgregarEdificio.Location = new System.Drawing.Point(249, 22);
+            this.btnAgregarEdificio.Name = "btnAgregarEdificio";
+            this.btnAgregarEdificio.Size = new System.Drawing.Size(136, 32);
+            this.btnAgregarEdificio.TabIndex = 7;
+            this.btnAgregarEdificio.Text = "Registrar Edificio";
+            this.btnAgregarEdificio.UseVisualStyleBackColor = true;
+            // 
+            // btnCrearRuta
+            // 
+            this.btnCrearRuta.Location = new System.Drawing.Point(261, 60);
+            this.btnCrearRuta.Name = "btnCrearRuta";
+            this.btnCrearRuta.Size = new System.Drawing.Size(115, 32);
+            this.btnCrearRuta.TabIndex = 6;
+            this.btnCrearRuta.Text = "Crear Conexion";
+            this.btnCrearRuta.UseVisualStyleBackColor = true;
+            // 
+            // lblEdificio2
+            // 
+            this.lblEdificio2.AutoSize = true;
+            this.lblEdificio2.Location = new System.Drawing.Point(44, 68);
+            this.lblEdificio2.Name = "lblEdificio2";
+            this.lblEdificio2.Size = new System.Drawing.Size(64, 16);
+            this.lblEdificio2.TabIndex = 5;
+            this.lblEdificio2.Text = "Edificio 2:";
+            // 
+            // lblEdificio1
+            // 
+            this.lblEdificio1.AutoSize = true;
+            this.lblEdificio1.Location = new System.Drawing.Point(44, 30);
+            this.lblEdificio1.Name = "lblEdificio1";
+            this.lblEdificio1.Size = new System.Drawing.Size(64, 16);
+            this.lblEdificio1.TabIndex = 4;
+            this.lblEdificio1.Text = "Edificio 1:";
+            // 
+            // lblDistancia
+            // 
+            this.lblDistancia.AutoSize = true;
+            this.lblDistancia.Location = new System.Drawing.Point(41, 107);
+            this.lblDistancia.Name = "lblDistancia";
+            this.lblDistancia.Size = new System.Drawing.Size(66, 16);
+            this.lblDistancia.TabIndex = 3;
+            this.lblDistancia.Text = "Distancia:";
+            // 
+            // tbDistancia
+            // 
+            this.tbDistancia.Location = new System.Drawing.Point(119, 101);
+            this.tbDistancia.Name = "tbDistancia";
+            this.tbDistancia.Size = new System.Drawing.Size(100, 22);
+            this.tbDistancia.TabIndex = 2;
+            // 
+            // tbEdificio2
+            // 
+            this.tbEdificio2.Location = new System.Drawing.Point(119, 62);
+            this.tbEdificio2.Name = "tbEdificio2";
+            this.tbEdificio2.Size = new System.Drawing.Size(100, 22);
+            this.tbEdificio2.TabIndex = 1;
+            // 
+            // tbEdificio1
+            // 
+            this.tbEdificio1.Location = new System.Drawing.Point(119, 25);
+            this.tbEdificio1.Name = "tbEdificio1";
+            this.tbEdificio1.Size = new System.Drawing.Size(100, 22);
+            this.tbEdificio1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -311,7 +311,7 @@
         private System.Windows.Forms.Label lblEdificio1;
         private System.Windows.Forms.Label lblDistancia;
         private System.Windows.Forms.TextBox tbDistancia;
-        private System.Windows.Forms.TextBox tbEdifiicio2;
+        private System.Windows.Forms.TextBox tbEdificio2;
         private System.Windows.Forms.Label lblResultadoRuta;
         private System.Windows.Forms.Button btnCalcularRuta;
         private System.Windows.Forms.ListBox lstRutas;
